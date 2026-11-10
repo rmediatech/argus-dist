@@ -22,12 +22,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.2.0] - 2026-11-01
 
 ### Added
-- **Sovereign Cinema & Smart TV Playhead Collector (`src/collectors/cinema.rs`)**: High-precision non-DRM hardware `media_session` and `power` state interrogator over ADB for Fire TV and Google TV nodes.
+- **Sovereign Cinema & Smart TV Playhead Collector (`src/collectors/cinema.rs`)**: High-precision non-DRM hardware `media_session` and `power` state interrogator over ADB for Smart TV and media display nodes.
 - **Kernel-Anchored Playhead Calculation**: Synchronizes live playhead milliseconds against kernel wake uptime without latency drift or sleep distortion.
 - **Synchronized SRT Subtitle Cue Matcher**: Live matching and windowed extraction of scene dialogue cues from local `.srt` files (`[playhead_ms - 15s, playhead_ms + 35s]`).
 - **Autonomous Sleeping HDMI Self-Heal**: Automatically detects sleeping screens during active playback and injects non-invasive `KEYEVENT_WAKEUP` (code `224`) to eliminate black screens.
 - **Adversarial Security Hardening**: Added spreadsheet formula injection neutralization (`'=`), ANSI escape code stripping, and boundary stress tests in `tests/adversarial_collector_tests.rs`.
-- **`argus cinema` Command**: CLI entry point supporting live telemetry reporting and synchronized subtitle observation (`argus cinema --host 192.168.1.158:5555 --srt movie.srt`).
+- **`argus cinema` Command**: CLI entry point supporting live telemetry reporting and synchronized subtitle observation (`argus cinema --host 192.0.2.158:5555 --srt movie.srt`).
 
 ## [0.1.0] - 2026-10-03
 
