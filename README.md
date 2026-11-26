@@ -37,6 +37,7 @@ Verified standalone binaries are distributed directly through the **[RMediaTech 
 | Platform | Architecture | Checksum (SHA-256) | Vault Download |
 | :--- | :--- | :--- | :--- |
 | **Linux (Static Musl)** | `x86_64` | `48375d6a83ef0ba2853700b5181c66b05a56550507ae76f1ae7c6e9553022cab` | [Download (3.0 MB)](https://rmediatech.com/bin/argus) |
+| **Android (Universal APK)** | `all` | `47388a5e2e1be375f62984eadb6996b5ad82013bfe403964d406c7eba5adec1b` | [Download APK (11.7 MB)](https://rmediatech.com/downloads) |
 
 ### 1-Click Stream Download & Installation
 ```bash

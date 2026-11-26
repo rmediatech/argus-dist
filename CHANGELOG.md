@@ -5,9 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.3.0] - 2026-11-07
+## [0.3.0] - 2026-11-26
 
-### Architectural Ground-Floor Rebuild (`SOVEREIGN-CHANGELOG-E2E-01`)
+### Added & Re-Architected (`SOVEREIGN-CHANGELOG-E2E-01`)
+- **`[Protocol / Identity]` Sovereign Sibling Attestation & Android Mobile Suite Integration (`SOVEREIGN-SIBLING-01`)**:
+  - *Root Cause Dissection*: Smart TV controller telemetry and fleet radar packets were previously throttled when contacting sibling nodes across local subnets or edge gateways during intensive radar sweeps.
+  - *Architectural & Mathematical Resolution*: Integrated constant-time HMAC-SHA256 nonced challenge-response validation ($\le 60\text{s}$ time window) anchored to `4E428019A109578B` across both the Linux TUI engine and the native Android Smart TV controller app (`app-release.apk`). Sibling nodes immediately bypass intrusion alarms and stream unthrottled playhead telemetry.
+  - *Empirical Verification*: 20/20 green adversarial tests in `tests/adversarial_sibling_argus_tests.rs`.
 
 - **`[Hardware/Kernel]` & `[State/SST]` Zero-Dependency Somatic Hardware Pressure, Thermal & AI/LLM Process Radar (`src/collectors/somatic.rs`, `argus somatic`)**:
   - **Root Cause Dissection**: Prior `argus` releases monitored network TCP latency and Smart TV ADB playhead telemetry, but lacked visibility into local Linux kernel resource stalls (PSI) and autonomous AI/LLM inference/agent workloads (`ollama`, `llama-server`, `vllm`, `antigravity`/`agy`, `claude`, `codex`) competing with sovereign defense daemons for CPU, RAM, and I/O bandwidth.
