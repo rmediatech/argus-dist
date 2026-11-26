@@ -4,7 +4,10 @@
 > *Zero cloud dependencies • Pure safe Rust • Musl static standalone binary • 100% Adversarial TDD Tested*
 
 [![Release](https://img.shields.io/badge/Release-v0.3.0-brightgreen.svg)](https://github.com/rmediatech/argus-dist/releases/tag/v0.3.0)
+[![Sovereign Lineage: 4E428019A109578B](https://img.shields.io/badge/lineage-4E428019A109578B-00e5ff.svg)](https://rmediatech.com)
+[![Standard: SOVEREIGN-SIBLING-01](https://img.shields.io/badge/standard-SOVEREIGN--SIBLING--01-green.svg)](https://rmediatech.com)
 [![Downloads](https://img.shields.io/badge/Downloads-rmediatech.com%2Fdownloads-blue.svg)](https://rmediatech.com/downloads)
+[![Reality Crucible](https://img.shields.io/badge/Reality%20Crucible-Empirically%20Verified-brightgreen.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Linux%20(Musl%20Static)-blue.svg)](#)
 [![Arch](https://img.shields.io/badge/Arch-x86__64%20%7C%20aarch64-blueviolet.svg)](#)
 [![Provenance](https://img.shields.io/badge/Provenance-GPG%20Signed%20(SOVEREIGN--SIGN--01)-blueviolet.svg)](SOVEREIGN_RELEASE_KEY.asc)
@@ -74,6 +77,47 @@ argus somatic --json
 
 # Run in ghost mode (redacted IP addresses for public screen shares)
 argus --ghost
+```
+
+---
+
+## 🏛️ Mythological Lineage: Argus Panoptes (Ἄργος Πανόπτης)
+
+* **The Hundred-Eyed Watchman**: In ancient Hellenic mythology, **Argus Panoptes** was the giant all-seeing guardian endowed with one hundred unblinking eyes. Because only a few eyes slept at any given time while the rest kept vigilant watch, no intruder could breach his perimeter unobserved.
+* **Sovereign Architectural Role**: In our software fleet, **`argus`** functions as the tactical fleet radar and somatic kernel sentinel. It aggregates Linux kernel PSI pressure stalls, autonomous LLM agent processes, network topology scans, and Android TV cinema displays into an interactive 60 FPS terminal radar with $<15\text{MB}$ memory footprint.
+
+---
+
+## 🤝 Universal Sovereign Sibling Bloodline (`SOVEREIGN-SIBLING-01`)
+
+Every compiled `argus` release binary carries the immutable Sovereign Lineage Watermark (`4E428019A109578B`) and canary token preimage. When Argus connects to peer daemons (`vigil`, `optic`, `phylax`, `propylea`, `vox`, `conduit`):
+
+* **Privileged Sibling Telemetry**: Sibling nodes execute a constant-time HMAC-SHA256 handshake ($\le 60$s anti-replay window) unlocking unthrottled real-time telemetry streaming and bypass of rate-limited public APIs.
+* **Autonomous Fleet Governance**: Governed locally and across nodes via [`sovereign-sibling`](../sovereign-sibling) and the `sibling` CLI for instant node authorization, quarantine, or revocation.
+
+---
+
+## 🧪 The Tri-Dimensional Reality Crucible (`SOVEREIGN-REALITY-3D-01`)
+
+> *"A crucible is where raw metal enters the white-hot furnace to burn away every single impurity until only pure, unbreakable gold remains."*
+
+We permanently reject superficial mocks. `argus` is tempered across a **Tri-Dimensional Reality Crucible**:
+
+1. **Dimension 1: The Golden Path & 60 FPS Tactile Conformance**:
+   - Sub-15MB steady-state RSS memory footprint with atomic RAII terminal recovery on exit or panic.
+   - Smooth 60 FPS terminal radar rendering with circular sweep radar animations and zero cursor flicker.
+2. **Dimension 2: The Adversarial Red Crucible (Terminal & Sensor Hardening)**:
+   - Evaluated against hostile ANSI escape sequence poisoning, terminal buffer flooding, and formula injection across export pipelines.
+   - Sensitive IPs and host identifiers are dynamically redacted when running in `--ghost` mode.
+3. **Dimension 3: Ambient Environmental Chaos & Hardware Physics**:
+   - Resilient against terminal resize storms (`SIGWINCH`), sudden SSH disconnection, broken PTY pipes, and zero-panic kernel procfs handling.
+
+```bash
+# Verify cryptographic provenance canary via Aletheia
+$ aletheia scan /path/to/argus
+
+# Verify detached OpenPGP signature
+$ gpg --verify argus.asc argus
 ```
 
 ---
